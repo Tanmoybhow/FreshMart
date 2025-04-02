@@ -4,7 +4,7 @@ import leaf from "../assets/leaf.png";
 import { NavLink } from "react-router";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="!bg-gray-900 !text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
         {/* Logo & About */}
         <div>
@@ -77,7 +77,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400">
-        &copy; {new Date().getFullYear()} Created with ❤️ by Tanmoy Bhowmik.
+        &copy; {new Date().getFullYear()} Created With ❤️ By Tanmoy Bhowmik.
       </div>
     </footer>
   );
