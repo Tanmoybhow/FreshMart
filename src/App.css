@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body{
+  font-family: "Kumbh Sans", sans-serif;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #4ADE80 !important;  /* Change to any color */
+}
+
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #4ADE80 !important; /* Change active dot color */
+}
