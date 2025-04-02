@@ -39,7 +39,7 @@ const Home = () => {
     <div className="my-4">
       <div className="h-[500px]  relative">
         <div className="absolute w-full h-full bg-[rgba(0,0,0,0.2)] top-0 left-0 flex items-center justify-center">
-          <Link to={'/products'} className="!bg-green-500 text-white px-6 py-3 text-lg font-semibold rounded hover:bg-green-700 transition-all shadow-2xl cursor-pointer">
+          <Link to={'/products'} className="main-button bg-green-500 text-white px-6 py-3 text-lg font-semibold rounded hover:bg-green-700 transition-all shadow-2xl cursor-pointer">
             Shop Now
           </Link>
         </div>

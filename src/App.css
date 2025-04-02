@@ -12,3 +12,9 @@ body{
 .custom-pagination .swiper-pagination-bullet-active {
   background-color: #4ADE80 !important; /* Change active dot color */
 }
+.main-button{
+  background-color: #22c55e !important;
+}
+.main-button:hover{
+  background-color: #15803d !important;
+}
