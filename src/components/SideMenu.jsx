@@ -13,13 +13,13 @@ const SideMenu = ({showMenu,setShowMenu,setShowLogin,user, setUser}) => {
           <i className="fa-solid fa-xmark"></i>
         </div>
         {Object.keys(user).length>0 ? <><p>Hi, {user.username}</p>
-        <div className="flex items-center justify-center rounded-sm gap-2 mb-4 bg-yellow-500 text-white py-2 px-3">
+        <div style={{backgroundColor:'#eab308'}} className="flex items-center justify-center rounded-sm gap-2 mb-4 text-white py-2 px-3">
         <button onClick={()=>{
           setUser({})
           localStorage.removeItem('loggedUser');
         }}>Logout</button>
       </div></>:
-        <div className="flex items-center justify-center rounded-sm gap-2 mb-4 bg-green-500 text-white py-2 px-3">
+        <div style={{backgroundColor:'#22c55e'}} className="flex items-center justify-center rounded-sm gap-2 mb-4 text-white py-2 px-3">
           <i className="fa-solid fa-user-plus"></i>
           <button onClick={()=>{
             setShowLogin(true);

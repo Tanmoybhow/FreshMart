@@ -50,7 +50,7 @@ const Home = () => {
         />
       </div>
       <div className="mt-7">
-        <h2 className="underline text-2xl text-green-500 font-semibold mb-3">
+        <h2 style={{color:'#22c55e'}} className="underline text-2xl font-semibold mb-3">
           Featured Products
         </h2>
         <div>
@@ -59,7 +59,7 @@ const Home = () => {
       </div>
 
       <section className="brand my-7">
-      <h2 className="underline text-2xl text-green-500 font-semibold mb-3">
+      <h2  style={{color:'#22c55e'}} className="underline text-2xl font-semibold mb-3">
           Brands
         </h2>
          <div className="grid grid-cols-2 md:grid-cols-4  gap-5 place-items-center">
@@ -71,7 +71,7 @@ const Home = () => {
       </section>
 
       <section className="testimonial my-7 ">
-      <h2 className="underline text-center text-4xl text-green-500 font-semibold mb-6">
+      <h2  style={{color:'#22c55e'}} className="underline text-center text-4xl  font-semibold mb-6">
           Our Happy Customers
         </h2>
            <div className="max-w-3xl w-full h-auto mx-auto">

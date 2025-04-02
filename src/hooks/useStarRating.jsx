@@ -5,7 +5,7 @@ export function useStarRating(rating) {
     let emptyStars = 5 - fullStars - (halfStar ? 1 : 0); // Empty stars (☆)
   
     return (
-      <span className="flex gap-1 text-yellow-500">
+      <span style={{color:'#eab308'}} className="flex gap-1">
         {/* Full Stars */}
         {[...Array(fullStars)].map((_, i) => (
           <i key={i} className="fa-solid fa-star"></i>

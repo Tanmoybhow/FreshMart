@@ -56,7 +56,7 @@ const ProductCard = ({ item, allProducts }) => {
           <p className="text-lg line-clamp-2 font-semibold text-gray-800">
             {item.title}
           </p>
-          <p className="text-green-600 font-bold text-xl mt-1">
+          <p style={{color:'#16a34a'}} className="font-bold text-xl mt-1">
             Price:{" "}
             <span>
               <i className="fa-solid fa-indian-rupee-sign"></i>
@@ -67,7 +67,7 @@ const ProductCard = ({ item, allProducts }) => {
           <p className="flex gap-2 items-center">Rating : {star}</p>
         </div>
         <button
-          className="mt-auto w-full bg-green-500 text-white px-4 py-2 rounded  hover:bg-green-700 transition-all cursor-pointer"
+          className="main-button mt-auto w-full bg-green-500 text-white px-4 py-2 rounded  hover:bg-green-700 transition-all cursor-pointer"
           onClick={addToCart}
         >
           Add to Cart

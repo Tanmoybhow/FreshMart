@@ -101,7 +101,7 @@ const LoginForm = ({ showLogin, setShowLogin,setUser,setShowElement,setCarts,set
     <>
       {!showSignUp ? (
         <div className="flex justify-center items-center min-h-screen bg-[rgba(0,0,0,.7)] fixed w-full h-[100vh] top-0 left-0 z-50">
-          <div className="bg-gray-100 bg-opacity-50 p-6 rounded-lg shadow-lg w-[350px]">
+          <div style={{backgroundColor:'#f3f4f6'}} className="bg-gray-100 bg-opacity-50 p-6 rounded-lg shadow-lg w-[350px]">
             <div className="flex justify-between items-center text-gray-700 pb-5">
               <h2 className=" text-xl font-bold  mb-4">Login</h2>
               <i
@@ -141,7 +141,7 @@ const LoginForm = ({ showLogin, setShowLogin,setUser,setShowElement,setCarts,set
               {/* Submit Button */}
               <button
                 type="submit"
-                className="bg-green-500 text-white py-2 rounded hover:bg-green-600 transition"
+                className="main-button bg-green-500 text-white py-2 rounded hover:bg-green-600 transition"
               >
                 Login
               </button>
@@ -150,8 +150,8 @@ const LoginForm = ({ showLogin, setShowLogin,setUser,setShowElement,setCarts,set
             {/* Sign Up Link */}
             <p className="text-gray-400 text-sm text-center mt-4">
               Don't have an account?{" "}
-              <span
-                className="text-yellow-600 cursor-pointer hover:underline"
+              <span style={{color:'#ca8a04'}}
+                className="cursor-pointer hover:underline"
                 onClick={() => setShowSignUp(true)}
               >
                 Sign Up
@@ -161,7 +161,7 @@ const LoginForm = ({ showLogin, setShowLogin,setUser,setShowElement,setCarts,set
         </div>
       ) : (
         <div className="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,.7)] w-full h-[100vh] top-0 left-0 z-50">
-          <div className="bg-gray-100 bg-opacity-50 p-6 rounded-lg shadow-lg w-[350px]">
+          <div style={{backgroundColor:'#f3f4f6'}} className="bg-opacity-50 p-6 rounded-lg shadow-lg w-[350px]">
             <div className="flex justify-between items-center text-gray-700 pb-5">
               <h2 className=" text-xl font-bold  mb-4">SignUp</h2>
               <i
@@ -211,7 +211,7 @@ const LoginForm = ({ showLogin, setShowLogin,setUser,setShowElement,setCarts,set
 
               <button
                 type="submit"
-                className="bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600 transition"
+                className="main-button-yellow bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600 transition"
               >
                 Sign Up
               </button>
@@ -221,7 +221,7 @@ const LoginForm = ({ showLogin, setShowLogin,setUser,setShowElement,setCarts,set
             <p className="text-gray-400 text-sm text-center mt-4">
               Already have an account?{" "}
               <span
-                className="text-green-400 cursor-pointer hover:underline"
+                style={{color:'#4ade80'}} className=" cursor-pointer hover:underline"
                 onClick={() => setShowSignUp(false)}
               >
                 Login

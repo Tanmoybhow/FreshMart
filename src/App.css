@@ -18,3 +18,9 @@ body{
 .main-button:hover{
   background-color: #15803d !important;
 }
+.main-button-yellow{
+  background-color: #eab308 !important;
+}
+.main-button-yellow:hover{
+  background-color: #ca8a04 !important;
+}

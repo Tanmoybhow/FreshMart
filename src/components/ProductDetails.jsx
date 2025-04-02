@@ -61,7 +61,7 @@ const ProductDetails = () => {
   return (
     Object.keys(productInfo).length==0? <Loading/>:
     <div className="w-full pb-12 ">
-      <button className="py-2 px-9 mb-6 text-white bg-green-500 hover:bg-green-600 transition rounded-sm cursor-pointer" onClick={()=>{
+      <button  className="main-button py-2 px-9 mb-6 text-white bg-green-500 hover:bg-green-600 transition rounded-sm cursor-pointer" onClick={()=>{
         history.back();
       }}>Back</button>
       <div className="flex gap-1 md:gap-7 justify-center md:flex-row flex-col">
@@ -82,7 +82,7 @@ const ProductDetails = () => {
           <p className="text-sm md:text-base text-gray-500 w-full md:w-[90%]">
             {productInfo.description}
           </p>
-          <p className="text-green-600 font-bold text-xl mt-1 py-3">
+          <p style={{color:'#16a34a'}} className=" font-bold text-xl mt-1 py-3">
             Price:{" "}
             <span>
               <i className="fa-solid fa-indian-rupee-sign"></i>
@@ -109,7 +109,7 @@ const ProductDetails = () => {
                     console.log(typeof quantity)
                   }
                 }}>-</span>
-                <span className="flex items-center justify-center text-2xl w-[100px]  px-6 text-gray-800 bg-yellow-500 hover:bg-yellow-600 transition rounded-sm cursor-pointer">{quantity}</span>
+                <span style={{backgroundColor:'#eab308'}} className="flex items-center justify-center text-2xl w-[100px]  px-6 text-gray-800  hover:bg-yellow-600 transition rounded-sm cursor-pointer">{quantity}</span>
                 <span className="flex items-center justify-center  px-6 border border-gray-300 text-2xl transition rounded-sm cursor-pointer" onClick={()=>{
                   if(quantity<3){
                     setQuantity((prev)=>prev+1)
@@ -120,13 +120,13 @@ const ProductDetails = () => {
           <div className="w-full md:w-[50%] flex gap-2 pt-9">
             <a
               href="#"
-              className="py-2 px-6 text-white bg-green-500 hover:bg-green-600 transition rounded-sm cursor-pointer"
+              className="main-button py-2 px-6 text-white bg-green-500 hover:bg-green-600 transition rounded-sm cursor-pointer"
             >
               Buy Now
             </a>
             <button
               
-              className="py-2 px-6 text-gray-800 bg-yellow-500 hover:bg-yellow-600 transition rounded-sm cursor-pointer" onClick={addToCart}
+              className="main-button-yellow py-2 px-6 text-gray-800 bg-yellow-500 hover:bg-yellow-600 transition rounded-sm cursor-pointer" onClick={addToCart}
             >
               Add to Cart
             </button>
@@ -134,7 +134,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <div className="pt-10 md:pt-30">
-        <h2 className="underline text-2xl text-green-500 font-semibold mb-3">
+        <h2 style={{color:'#22c55e'}} className="underline text-2xl  font-semibold mb-3">
           Related Products
         </h2>
         <div>
